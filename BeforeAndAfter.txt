@@ -1,0 +1,145 @@
+Before:
+
+package clueGame;
+
+public class BoardCell {
+
+	public int row;
+	public int col;
+	public String roomInitial;
+	private DoorDirection doorDirection;
+	public boolean isDoorway() {
+		if (roomInitial.length() == 2 && roomInitial.charAt(1) != 'N') {
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+	public void setDoorDirection() {	// Revise this later
+		if (roomInitial.length() == 2) {
+			switch(roomInitial.charAt(1)) {
+			case 'D': 
+				doorDirection = DoorDirection.DOWN;
+				break;
+			case 'U':
+				doorDirection = DoorDirection.UP;
+				break;
+			case 'L':
+				doorDirection = DoorDirection.LEFT;
+				break;
+			case 'R':
+				doorDirection = DoorDirection.RIGHT;
+				break;
+			default:
+				doorDirection = DoorDirection.NONE;
+			}
+		}
+		
+		
+	}
+	public Object getDoorDirection() {
+		if (roomInitial.length() == 2) {
+			switch(roomInitial.charAt(1)) {
+				case 'D': 
+					return DoorDirection.DOWN;
+				case 'U':
+					return DoorDirection.UP;
+				case 'L':
+					return DoorDirection.LEFT;
+				case 'R':
+					return DoorDirection.RIGHT;
+			}
+		}
+		return DoorDirection.NONE;
+	}
+	public String getIn() {
+		
+		return roomInitial;
+	}
+	
+	public char getInitial() {
+		return roomInitial.charAt(0);
+	}
+}
+
+
+After:
+
+/*
+ * Authors: Courtney Richardson, James Hinshaw
+ * 
+ */
+package clueGame;
+
+public class BoardCell {
+
+	private int row;
+	private int col;
+	private char roomInitial;
+	private DoorDirection doorDirection;
+	
+	public BoardCell() {
+		doorDirection = DoorDirection.NONE; // door direction should be preset to none if it does not exist
+	}
+	
+	public int getRow() {
+		return row;
+	}
+	
+	public int getCol() {
+		return col;
+	}
+	
+	public char getInitial() {
+		return roomInitial;
+	}
+	
+	public DoorDirection getDoorDirection() {
+		return doorDirection;
+	}
+	
+	public void setRow(int aNum) {
+		row = aNum;
+	}
+	
+	public void setCol(int aNum) {
+		col = aNum;
+	}
+	
+	public void setRoomInitial(char anInitial) {
+		roomInitial = anInitial;
+	}
+	
+	public void setDoorDirection(char aChar) {	// Revise this later
+
+		switch(aChar) {
+		case 'D': 
+			doorDirection = DoorDirection.DOWN;
+			break;
+		case 'U':
+			doorDirection = DoorDirection.UP;
+			break;
+		case 'L':
+			doorDirection = DoorDirection.LEFT;
+			break;
+		case 'R':
+			doorDirection = DoorDirection.RIGHT;
+			break;
+		default:
+			doorDirection = DoorDirection.NONE;
+		}
+	}
+	
+	public boolean isDoorway() {
+		if (doorDirection.equals(DoorDirection.DOWN) || doorDirection.equals(DoorDirection.UP) || doorDirection.equals(DoorDirection.LEFT) || doorDirection.equals(DoorDirection.RIGHT)) {
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+
+	
+}
+

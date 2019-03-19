@@ -1,0 +1,20 @@
+-Test Legend
+Our Legend has 11 entries.
+-Test Rows and Columns
+Our ClueLayout has 24 rows and 18 columns.
+-Test doorway direction
+The bedroom has a door that opens to the right.
+The conservatory has a door that opens down.
+The Library has a door that opens to the left.
+The Garage has a door that opens up.
+The cell at 9,15 is not a door
+The cell at 0,6 is not a door and is a walkway
+-Test number of doors
+The number of doors is 23.
+The cell initial at 0,0 should be B.
+The cell initial at 11,6 should be R.
+The cell initial at 22,5 should be P.
+The cell initial at 0,9 should be C.
+The cell initial at 21,0 should be K.
+The cell initial at 0,17 should be G.
+The cell initial at 11,9 should be X.

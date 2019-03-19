@@ -1,0 +1,131 @@
+commit 0a2173656daedcb6983c9c6ecd3f0b27f8ece7f4
+Author: Courtney <courtneyrichardson@mymail.mines.edu>
+Date:   Mon Mar 18 22:25:13 2019 -0600
+
+    Cleaned up appeaerance of code and commented everything for ease of reading
+
+commit 13e358c58e98be2a3f3c5b5863b3a7af0f50322f
+Author: James Hinshaw <hinshaw@mines.edu>
+Date:   Mon Mar 18 18:30:53 2019 -0600
+
+    Added the before and after txt file to the repo
+
+commit 7645cd6561bb76042b567e5bf0c79dda61d19ed3
+Author: James Hinshaw <hinshaw@mines.edu>
+Date:   Mon Mar 18 18:26:24 2019 -0600
+
+    Organized the BoardCell.java file so all getters are in one plcae and all setters after, also added a constructor class for BoardCell
+
+commit 46baef17b6ffcac405395287f8a705505e4d7e91
+Author: James Hinshaw <hinshaw@mines.edu>
+Date:   Mon Mar 18 18:25:04 2019 -0600
+
+    Every call for iniail is now getInitial now getRoomInitial()
+
+commit cc50c240c0236ce6c63259dace26a65e6bd04451
+Author: James Hinshaw <hinshaw@mines.edu>
+Date:   Mon Mar 18 18:23:28 2019 -0600
+
+    Updated the function in OurTest.java which grabs the room initial from the BoardCell class
+
+commit 5a286dd8149e671cbfd267390fdc7465f634acb4
+Author: James Hinshaw <hinshaw@mines.edu>
+Date:   Mon Mar 18 18:22:07 2019 -0600
+
+    Updated all strings in Board.java to chars so no more errors with the updated BoardCell.java using chars for initials instead of strings
+
+commit 1652c333aaa033173d3ba7f856829f27dcaf18d6
+Author: James Hinshaw <hinshaw@mines.edu>
+Date:   Mon Mar 18 18:20:37 2019 -0600
+
+    Updated getter for door direction to be a lot simpler
+
+commit c181689dcdd9c6692ee0c98ede567c43e3430106
+Author: James Hinshaw <hinshaw@mines.edu>
+Date:   Mon Mar 18 18:19:47 2019 -0600
+
+    Updated the exception to be alot simpler with the new Board Cell class
+
+commit 90ddae27c8d3d14a9bf5243d985a25863d9fcbe6
+Author: James Hinshaw <hinshaw@mines.edu>
+Date:   Mon Mar 18 18:13:49 2019 -0600
+
+    Updated room Initial to only be a char with a door direciton instead of a string as well
+
+commit 9320b4233994eb7f49c6d985483bba4c4d7b594e
+Author: James Hinshaw <hinshaw@mines.edu>
+Date:   Mon Mar 18 18:02:30 2019 -0600
+
+    Created LoadRoom and LoadBoard Configt and made intialize function smaller
+
+commit 223ab1d01777d11ad91622f0bab198a5f828e01f
+Author: James Hinshaw <hinshaw@mines.edu>
+Date:   Mon Mar 18 17:55:38 2019 -0600
+
+    Got rid of the atumoatically generated stub comments and extra comments lying around
+
+commit a1e995768b7d33bf2ba6c7eacf0ed871f01d4431
+Author: James Hinshaw <hinshaw@mines.edu>
+Date:   Mon Mar 18 17:53:46 2019 -0600
+
+    Updated Board.Java to use the getters and setters isntead of private and public variables
+
+commit 34881a81c66612aa82dc68142ccf36f47bbdb515
+Author: James Hinshaw <hinshaw@mines.edu>
+Date:   Mon Mar 18 17:49:58 2019 -0600
+
+    Added getters and setters to the correct BoardCell (Not the one in the experiment package
+
+commit 7592677bd46cbc2bccb34cf51aac41fe1529ed74
+Author: James Hinshaw <hinshaw@mines.edu>
+Date:   Mon Mar 18 17:46:34 2019 -0600
+
+    Changed row and col to private and added getters and setters
+
+commit 7c2000fb425828a854deb40c7482e0d863bcb328
+Author: James Hinshaw <hinshaw@mines.edu>
+Date:   Mon Mar 18 17:44:20 2019 -0600
+
+    Updated for Part1
+
+commit 84bce35376e3d41cd9e0c27c9a589a9cb4205b9d
+Author: Ioana Hinshaw <you@example.com>
+Date:   Thu Mar 14 18:45:26 2019 -0600
+
+    Got everything working and looking good
+
+commit f674882d1bd451947112182a466100bb7a2796ee
+Author: Ioana Hinshaw <you@example.com>
+Date:   Thu Mar 14 18:44:46 2019 -0600
+
+    Got all targets tests working
+
+commit f1644ee7d709260393ec7433f219b73012070e34
+Author: Ioana Hinshaw <you@example.com>
+Date:   Thu Mar 14 18:44:31 2019 -0600
+
+    Got all adjacency tests working
+
+commit eda8c35f61347aa593378f296275ef6c395a8eca
+Author: Ioana Hinshaw <you@example.com>
+Date:   Thu Mar 14 18:44:10 2019 -0600
+
+    Completed the targets tests
+
+commit 3aa07a830c7550f7a94df5bce81a1a63e5c6ca56
+Author: Ioana Hinshaw <you@example.com>
+Date:   Thu Mar 14 18:43:51 2019 -0600
+
+    Completed the adjacency tests
+
+commit 20e77dd3b52b7e62de2a54a66b2dba51b9fe823f
+Author: Ioana Hinshaw <you@example.com>
+Date:   Thu Mar 14 18:43:23 2019 -0600
+
+    Added first test
+
+commit 0ec7fe445a438b4dd7186aee6e309db2b5657791
+Author: Ioana Hinshaw <you@example.com>
+Date:   Thu Mar 14 18:39:34 2019 -0600
+
+    Updated to part 4

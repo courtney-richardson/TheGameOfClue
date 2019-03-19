@@ -1,0 +1,11 @@
+R, Bathroom, card
+G, Garage, card
+B, Bedroom, card
+H, GreenHouse, card
+P, Porch, card
+S, Study, card
+K, Kitchen, card
+L, Library, card
+C, Conservatory, card
+W, Walkway, card
+X, Closet, card
